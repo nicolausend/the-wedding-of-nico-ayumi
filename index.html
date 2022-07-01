@@ -79,7 +79,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -150,7 +150,7 @@
 	<div id="floating-button" class="float">
 		<div class="control-center open">
 			<div class="audio-play">
-				<div data-video="QZng89VxKWg" data-autoplay="0" data-loop="1" id="youtube-1"></div>
+				<div data-video="QZng89VxKWg" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
 			</div>
 			<ul class="right-sidebar">
 				<!--gallery-->
@@ -211,7 +211,7 @@
 					<div class="simply-countdown simply-countdown-wedding"></div>
 					<br>
 					<p>
-						<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW0zY2Ewam91bnUzbW5ub2YwdjVxaTliNmUgcDY4MjI3cmY0dTJ0cWI1b3JrZjEwbTN1NDRAZw&tmsrc=p68227rf4u2tqb5orkf10m3u44%40group.calendar.google.com" target="_blank" class="btn btn-primary btn-sm">Save the date</a><br>
+						<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2poYTk2MnZwaDZuZzc4NjJ2NDk4azNjbXIgbmljb2xhdXNnaXRodWJAbQ&tmsrc=nicolausgithub%40gmail.com" target="_blank" class="btn btn-primary btn-sm">Save the date</a><br>
 						<i style="font-size: 15px">*Klik tombol ini untuk menyimpan tanggal pada google kalender</i>
 					</p>
 				</div>
@@ -696,8 +696,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 <script>
-	day = 20; month = 5-1; year = 2022;
-	hour = 18; minute = 0;
+	day = 29; month = 7-1; year = 2022;
+	hour = 8; minute = 0;
 	var d = new Date(year, month, day, hour, minute, 0, 0);
 
 	// default example
@@ -724,10 +724,10 @@
 		playAudio1();
 		/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
 		/*pengen pas di klik buka undangan baru jalan animasinya*/
-		/*var c = document.getElementsByClassName('right-sidebar');
+		var c = document.getElementsByClassName('right-sidebar');
 		for (var i = 0; i < c.length; i++) {
 			c[i].classList.add('animate');
-		}*/
+		}
 	});
 
 	$.get( "https://api.github.com/repos/ngodingsolusi/the-wedding-of-rehan-maulidan/issues?state=all&per_page", function( data ) {
@@ -783,7 +783,7 @@
 	}
 
 	function togglePlayButton1(play) {
-		document.getElementById("youtube-icon1").src = play ? "https://i.imgur.com/IDzX9gL.png" : "https://i.imgur.com/quyUPXN.png";
+		document.getElementById("youtube-icon1").src = play ? "/images/audio/pause.png" : "/images/audio/play.png";
 	}
 
 	function toggleAudio1() {
