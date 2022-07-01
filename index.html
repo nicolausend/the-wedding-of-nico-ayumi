@@ -245,7 +245,7 @@
 						<div id="social-media-nico">
 							<ul class="fh5co-social-icons">
 								<li><a target="_blank" href="https://twitter.com/nicolausend"><i class="icon-twitter-with-circle"></i></a></li>
-								<li><a target="_blank" href="https://instagram.com/in/nicolausend/"><i class="icon-instagram-with-circle"></i></a></li>
+								<li><a target="_blank" href="https://instagram.com/nicolausend/"><i class="icon-instagram-with-circle"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -338,7 +338,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Galeri Foto</h2>
-					<h3 style="color: #bf9b73">Tiga Mata Studio Day - 19 Mei 2022</h3>
+					<h3 style="color: #bf9b73"><a href="https://instagram.com/tigamatastudio/">Tiga Mata Studio</a> Day - 19 Mei 2022</h3>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md animate-box">
@@ -533,7 +533,7 @@
 
 	<div id="fh5co-testimonial" style="background: url('images/background/repeat-background/so-white.png'); background-repeat:repeat; border-top: 1px solid #f2f2f2">
 		<img height="400" class="flower-bukutamu-right" style="right: 0;top: 0;position: absolute;" src="images/background/flowers/top-right-3.svg">
-		<img height="400" class="flower-bukutamu-left" style="position: absolute; left: 0; bottom: 0" src="images/background/flowers/bottom-left-3.svg">
+		<!-- <img height="400" class="flower-bukutamu-left" style="position: absolute; left: 0; bottom: 0" src="images/background/flowers/bottom-left-3.svg"> -->
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -541,6 +541,7 @@
 					<span style="color: #bf9b73">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</span>
 				</div>
 			</div>
+			<div id="disqus_thread"></div>
 			<!--<div class="row">
                 <div class="col-md-12 animate-box">
                     <div class="wrap-testimony">
@@ -583,7 +584,7 @@
                 </div>
             </div>-->
 
-			<div class="row animate-box">
+			<!-- <div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="list-group"></div>
 				</div>
@@ -592,7 +593,7 @@
 			<div id="button-send" class="text-center animate-box">
 				<a href="https://github.com/maulidandev/nikah-rehan-maulidan/issues/new/choose" target="_blank" class="btn btn-primary btn-sm">Kirim Ucapan</a><br>
 				<i style="font-size: 15px">Note : Hanya bisa diisi jika mempunyai akun github. Jika belum ada silahkan daftar terlebih dahulu</i>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
@@ -730,19 +731,19 @@
 		}
 	});
 
-	$.get( "https://api.github.com/repos/ngodingsolusi/the-wedding-of-rehan-maulidan/issues?state=all&per_page", function( data ) {
-		for (let i = 0; i < data.length; i++){
-			const item = `
-				<a class="list-group-item">
-					<div class="name"><span class="strong" style="font-size: 24px">${data[i].user.login}</span> <span class="label label-success">${data[i].labels.length > 0 ? data[i].labels[0].name : 'Tanpa Keterangan'}</span></div>
-					<hr style="margin-top: 0;">
-					<div class="comment">${new showdown.Converter().makeHtml(data[i].body)}</div>
-				</a>
-			`;
+	// $.get( "https://api.github.com/repos/ngodingsolusi/the-wedding-of-rehan-maulidan/issues?state=all&per_page", function( data ) {
+	// 	for (let i = 0; i < data.length; i++){
+	// 		const item = `
+	// 			<a class="list-group-item">
+	// 				<div class="name"><span class="strong" style="font-size: 24px">${data[i].user.login}</span> <span class="label label-success">${data[i].labels.length > 0 ? data[i].labels[0].name : 'Tanpa Keterangan'}</span></div>
+	// 				<hr style="margin-top: 0;">
+	// 				<div class="comment">${new showdown.Converter().makeHtml(data[i].body)}</div>
+	// 			</a>
+	// 		`;
 
-			$("#fh5co-testimonial .list-group").append(item);
-		}
-	});
+	// 		$("#fh5co-testimonial .list-group").append(item);
+	// 	}
+	// });
 
 	function scrollToElement(el) {
 		$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
@@ -929,6 +930,22 @@
 
 	// Since we are using dynamic mode, we need to programmatically open lightGallery
 	inlineGallery.openGallery();
+
+	 /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://nicolausend.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
 
 </body>
