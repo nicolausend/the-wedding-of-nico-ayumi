@@ -9,39 +9,39 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://ngodingsolusi.github.io/the-wedding-of-rehan-maulidan/">
-    <img src="images/readme/half%20circle.png" alt="Logo" width="120" height="120">
+  <a href="https://nicolausend.github.io/the-wedding-of-nico-ayumi/">
+    <img src="images/gallery2/circle DSC07466-modified.png" alt="Logo" width="120" height="120">
   </a>
 
   <h1 align="center">The Wedding</h1>
 
   <p align="center">
-    <strong>Rehan & Maulidan</strong>
+    <strong>Nico & Ayumi</strong>
     <br />
-    <a href="https://ngodingsolusi.github.io/the-wedding-of-rehan-maulidan/">Explore the Invitation ! »</a>
+    <a href="https://nicolausend.github.io/the-wedding-of-nico-ayumi/">Explore the Invitation ! »</a>
     <br />
     <br />
-    <a href="https://github.com/rayhanyulanda">Rayhan Yulanda</a>
+    <a href="https://github.com/nicolausend/">Rayhan Yulanda</a>
     ·
-    <a href="https://github.com/maulidandev">Maulidan Nashuha</a>
+    <a href="https://github.com/nicolausend/">Maulidan Nashuha</a>
   </p>
 </div>
 
 <!-- The wedding -->
-## Maulidan Nashuha <img src="images/readme/man.png" width="30px">
+<!-- ## Maulidan Nashuha <img src="images/readme/man.png" width="30px"> -->
 
 
 
-Reach me around the web :
+<!-- Reach me around the web : -->
 
-<a href="https://www.linkedin.com/in/maulidandev/" target="_blank">
+<!-- <a href="https://www.linkedin.com/in/maulidandev/" target="_blank">
 <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
 <a href="https://www.github.com/in/maulidandev/" target="_blank">
 <img src="https://img.shields.io/badge/Github-%fedcba.svg?&style=flat-square&logo=github&logoColor=white&color=black" alt="Github">
 </a>
 <a href="https://www.instagram.com/maulidannashuha/" target="_blank">
-<img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram">
+<img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"> -->
 </a>
 <!--<a href="https://twitter.com/maulidandev" target="_blank">
 <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=flat-square&logo=twitter&logoColor=white" alt="Twitter">
