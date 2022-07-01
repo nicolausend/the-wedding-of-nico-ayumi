@@ -2337,4 +2337,18 @@ fadeIn {  from {
   background-size: cover;
 }
 
+#matamu{
+  filter: grayscale(1);
+  border-radius: 50%;
+}
+
+#matamu:hover{
+  filter: grayscale(0);
+}
+
+#matamuteks{
+  margin-left: 15px;
+  font-size: 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
