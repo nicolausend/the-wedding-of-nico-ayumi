@@ -846,13 +846,13 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-ayat{
   background-color: #113468;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   position: relative;
   overflow: hidden;
 }
 
 #fh5co-ayat .ayat-content{
-  padding: 7em 0;
+  padding: 6em 0;
   text-align: center;
 }
 
@@ -2349,6 +2349,18 @@ fadeIn {  from {
 #matamuteks{
   margin-left: 15px;
   font-size: 24px;
+}
+
+#bukanayat{
+  margin-top: 30px;
+  background-color: #113468;
+  /* padding: 7em; */
+  color: #ffffff;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: -65px;
 }
 
 /*# sourceMappingURL=style.css.map */
