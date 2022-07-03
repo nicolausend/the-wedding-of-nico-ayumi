@@ -2344,6 +2344,10 @@ fadeIn {  from {
   filter: grayscale(1);
   border-radius: 50%;
 }
+#dewa19{
+  filter: grayscale(1);
+  border-radius: 50%;
+}
 
 #matamu:hover{
   filter: grayscale(0);
