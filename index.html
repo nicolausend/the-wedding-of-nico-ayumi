@@ -403,7 +403,7 @@
         </div>
     </div>-->
 	<div id="fh5co-ayat">
-		<!--<img height="400" width="100%" style="top: 0" src="images/background/wave-up.svg">-->
+		<!-- <img height="400" width="100%" style="top: 0" src="images/background/wave-up.svg"> -->
 		<img height="400" width="100%" style="position: absolute; bottom: -175px" src="images/background/wave-down.svg">
 		<div class="container">
 			<div id="bukanayat">
@@ -434,11 +434,11 @@
 				Bukan juga dirampas dari mimpi dan tidur.<br>
 				Cinta kita tidak kering dan kemarau.<br>
 				<br>
-				<b>Nicolaus Sulistyo</b>
+				<div class="text-left"><b>Nicolaus Sulistyo</b></div>
 			</div>
 
 			<div class="ayat-content animate-box">
-				Anyonyasyawyabhicaro, Bhawedamaranantikah. Esa dharmah samasena, Jneyah stripumsayoh parah.
+				"Anyonyasyawyabhicaro, Bhawedamaranantikah. Esa dharmah samasena, Jneyah stripumsayoh parah."
 				<br>
 				<b>Weda Smrthi : IX.101</b>
 			</div>
@@ -804,10 +804,10 @@
 			height: '0',
 			width: '0',
 			videoId: ctrlq1.dataset.video,
-			// playerVars: {
-			// 	autoplay: ctrlq1.dataset.autoplay,
-			// 	loop: ctrlq1.dataset.loop,
-			// },
+			playerVars: {
+				autoplay: ctrlq1.dataset.autoplay,
+				loop: ctrlq1.dataset.loop,
+			},
 			events: {
 				'onReady': onPlayerReady1,
 				'onStateChange': onPlayerStateChange1
