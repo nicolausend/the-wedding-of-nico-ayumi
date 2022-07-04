@@ -691,6 +691,13 @@
 
 		</div>
 	</footer>
+
+	<audio id="lagu" loop>
+		<source src="song1.mp3" type="audio/mpeg">
+		<!-- fallback for non supporting browsers goes here -->
+		<p>Your browser does not support HTML5 audio, but you can still
+			 <a href="song1.mp3">download the music</a>.</p>
+	</audio>
 </div>
 <!--</div>-->
 
@@ -752,10 +759,13 @@
 	// 	enableUtc: false
 	// });
 
+	var myAudio = document.getElementById('lagu');
+
 	$('#open-invitation').click(function(){
 		$('#overlay').addClass('hide-overlay');
-		player1.playVideo();
-		togglePlayButton1(true);
+		playLagu()
+		// player1.playVideo();
+		// togglePlayButton1(true);
 		// playAudio1();
 		/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
 		/*pengen pas di klik buka undangan baru jalan animasinya*/
@@ -800,25 +810,46 @@
 		var ctrlq1 = document.getElementById("youtube-audio1");
 		ctrlq1.innerHTML = '<img id="youtube-icon1" src=""/><div id="youtube-player1"></div>';
 		ctrlq1.style.cssText = 'width:20px;margin:0 auto;cursor:pointer;cursor:hand;display:none';
-		ctrlq1.onclick = toggleAudio1;
+		ctrlq1.onclick = toggleLagu;
 
-		console.log('adasd', ctrlq1)
-		player1 = new YT.Player('youtube-player1', {
-			height: '0',
-			width: '0',
-			videoId: ctrlq1.dataset.video,
-			playerVars: {
-				autoplay: ctrlq1.dataset.autoplay,
-				loop: ctrlq1.dataset.loop,
-				'playsinline': 1
-			},
-			events: {
-				'onReady': onPlayerReady1,
-				'onStateChange': onPlayerStateChange1
-			}
-		});
+		// console.log('adasd', ctrlq1)
+		// player1 = new YT.Player('youtube-player1', {
+		// 	height: '0',
+		// 	width: '0',
+		// 	videoId: ctrlq1.dataset.video,
+		// 	playerVars: {
+		// 		autoplay: ctrlq1.dataset.autoplay,
+		// 		loop: ctrlq1.dataset.loop,
+		// 		'playsinline': 1
+		// 	},
+		// 	events: {
+		// 		'onReady': onPlayerReady1,
+		// 		'onStateChange': onPlayerStateChange1
+		// 	}
+		// });
 	}
 
+	function toggleLaguButton(play) {
+		document.getElementById("youtube-icon1").src = play ? "https://raw.githubusercontent.com/nicolausend/the-wedding-of-nico-ayumi/main/images/audio/pause.png" : "https://raw.githubusercontent.com/nicolausend/the-wedding-of-nico-ayumi/main/images/audio/play.png";
+	}
+
+	function toggleLagu() {
+		if (myAudio.paused) {
+			myAudio.play()
+			toggleLaguButton(true)
+		} else {
+			myAudio.pause()
+			toggleLaguButton(false)
+		}
+	}
+
+	function playLagu() {
+		myAudio.play();
+		toggleLaguButton(true);
+		document.getElementById("youtube-audio1").style.display = "block";
+	}
+
+	
 	function togglePlayButton1(play) {
 		document.getElementById("youtube-icon1").src = play ? "https://raw.githubusercontent.com/nicolausend/the-wedding-of-nico-ayumi/main/images/audio/pause.png" : "https://raw.githubusercontent.com/nicolausend/the-wedding-of-nico-ayumi/main/images/audio/play.png";
 	}
